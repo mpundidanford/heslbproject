@@ -16,6 +16,6 @@ class RolesTableseeder extends Seeder
 
         role::create(['name'=>'unloanofficer']);
         role::create(['name'=>'bdloanofficer']);
-        Role::created(['name'=>'admin']);
+        role::create(['name'=>'admin']);
     }
 }
