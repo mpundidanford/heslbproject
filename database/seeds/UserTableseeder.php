@@ -23,7 +23,7 @@ class UserTableseeder extends Seeder
 
 
         $unloanofficer = User::create([
-            'name'=>'unloanofficer',
+            'name'=>'unloanofficer',    
             'email'=>'loanofficer@gmail.com',
             'password'=>bcrypt('userone'),
         ]);
