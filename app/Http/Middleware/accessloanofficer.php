@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use auth;
+use Auth;
 
 class accessloanofficer
 {

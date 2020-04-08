@@ -40,4 +40,10 @@ class User extends Authenticatable
     public function roles(){
         return $this->belongsTomany('App\Role');
     }
+    public function hasAnyRoles($roles){
+        return null !==$this->roles()->whereIn('name',$roles)->first();
+    }
+    public function hasAnyRole($role){
+        return null !==$this->role()->where('name',$role)->first();
+    }
 }

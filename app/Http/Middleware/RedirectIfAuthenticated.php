@@ -19,6 +19,10 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
+
+            if(Auth::user()->uloanofficer){
+                return redirect('unloanofficer');
+            }
             return redirect(RouteServiceProvider::HOME);
         }
 
